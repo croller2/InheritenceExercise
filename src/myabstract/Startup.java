@@ -33,6 +33,9 @@ public class Startup {
             System.out.println("It does not have rings");
         }
         
+        earth.setDistanceFromSun(1490000000);
+        System.out.println("Light time to planet from it's sar: " + earth.calculateLightTimeToBody()); 
+        
         earth.colonizePlanet();
     }
     
