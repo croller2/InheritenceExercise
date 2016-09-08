@@ -5,13 +5,16 @@
  */
 package myinterface;
 
-import concrete.*;
 
 /**
  *
  * @author chris
  */
-public class PlanetaryBody extends CelestialBody {
+public class PlanetaryBody implements CelestialBody {
+    //super class properties
+    private double bodyDiameterKM;
+    private String name;
+    
     private int yearLength;
     private int numOfMoons;
     private boolean hasRings;
@@ -38,6 +41,26 @@ public class PlanetaryBody extends CelestialBody {
 
     public void setHasRings(boolean hasRings) {
         this.hasRings = hasRings;
+    }
+
+    @Override
+    public double getBodyDiameterKM() {
+        return bodyDiameterKM;
+    }
+
+    @Override
+    public void setBodyDiameterKM(double bodyDiameterKM) {
+        this.bodyDiameterKM = bodyDiameterKM;
+    }
+
+    @Override
+    public String getName() {
+       return name;
+    }
+
+    @Override
+    public void setName(String name) {
+       this.name = name;
     }
     
     

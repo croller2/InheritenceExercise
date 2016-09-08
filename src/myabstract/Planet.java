@@ -5,7 +5,6 @@
  */
 package myabstract;
 
-import concrete.*;
 
 /**
  *
@@ -54,6 +53,11 @@ public class Planet extends PlanetaryBody{
         }else{
             System.out.println("Doesn't Support Life, Keep Looking");
         }
+    }
+    
+    @Override
+     public double calculateLightTimeToBody() {
+        return this.getDistanceFromSun() * this.getSpeedOfLight();
     }
     
     

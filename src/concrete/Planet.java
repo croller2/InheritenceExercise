@@ -14,6 +14,7 @@ public class Planet extends PlanetaryBody{
     private boolean hasWater;
     private boolean livable;
     
+    
 
     public String getPlanetClass() {
         return planetClass;

@@ -5,16 +5,17 @@
  */
 package myabstract;
 
-import concrete.*;
 
 /**
  *
  * @author chris
  */
-public class CelestialBody {
+public abstract class CelestialBody {
     private double bodyDiameterKM;
     private String name;
 
+    public abstract double calculateLightTimeToBody();
+    
     public double getBodyDiameterKM() {
         return bodyDiameterKM;
     }

@@ -11,25 +11,18 @@ import concrete.*;
  *
  * @author chris
  */
-public class CelestialBody {
-    private double bodyDiameterKM;
-    private String name;
+public interface CelestialBody {
 
-    public double getBodyDiameterKM() {
-        return bodyDiameterKM;
-    }
 
-    public void setBodyDiameterKM(double bodyDiameterKM) {
-        this.bodyDiameterKM = bodyDiameterKM;
-    }
+    public abstract double getBodyDiameterKM();
+    
 
-    public String getName() {
-        return name;
-    }
+    public abstract void setBodyDiameterKM(double bodyDiameterKM);  
+    
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    public abstract String getName();
+
+    public abstract void setName(String name);
     
     
     
