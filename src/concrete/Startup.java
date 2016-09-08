@@ -9,7 +9,7 @@ package concrete;
  *
  * @author chris
  */
-public class InheritenceExercise {
+public class Startup {
 
     /**
      * @param args the command line arguments
