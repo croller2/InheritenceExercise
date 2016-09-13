@@ -5,7 +5,6 @@
  */
 package myabstract;
 
-import concrete.*;
 
 /**
  *
@@ -13,8 +12,6 @@ import concrete.*;
  */
 public abstract class PlanetaryBody extends CelestialBody {
     private int yearLength;
-    private int numOfMoons;
-    private boolean hasRings;
     private double distanceFromSun;
     private final static double speedOfLight = 299792458;
 
@@ -24,22 +21,6 @@ public abstract class PlanetaryBody extends CelestialBody {
 
     public void setYearLength(int yearLength) {
         this.yearLength = yearLength;
-    }
-
-    public int getNumOfMoons() {
-        return numOfMoons;
-    }
-
-    public void setNumOfMoons(int numOfMoons) {
-        this.numOfMoons = numOfMoons;
-    }
-
-    public boolean isHasRings() {
-        return hasRings;
-    }
-
-    public void setHasRings(boolean hasRings) {
-        this.hasRings = hasRings;
     }
 
     public double getDistanceFromSun() {
@@ -55,7 +36,7 @@ public abstract class PlanetaryBody extends CelestialBody {
     }
     
     
-
+    //added in the override to show abstract method
     @Override
     public double calculateLightTimeToBody() {
         return distanceFromSun * speedOfLight;

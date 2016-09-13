@@ -13,6 +13,7 @@ package myabstract;
 public abstract class CelestialBody {
     private double bodyDiameterKM;
     private String name;
+    private double luminosity;
 
     public abstract double calculateLightTimeToBody();
     
@@ -30,6 +31,14 @@ public abstract class CelestialBody {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public double getLuminosity() {
+        return luminosity;
+    }
+
+    public void setLuminosity(double luminosity) {
+        this.luminosity = luminosity;
     }
     
     

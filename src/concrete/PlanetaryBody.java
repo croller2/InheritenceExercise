@@ -1,10 +1,9 @@
 
 package concrete;
 
-public abstract class PlanetaryBody implements CelestialBody {
+public class PlanetaryBody extends CelestialBody {
     private int yearLength;
     private double distanceFromStar;
-    private double bodyDiameterKM;
 
  
     public int getYearLength() {
@@ -23,7 +22,6 @@ public abstract class PlanetaryBody implements CelestialBody {
         this.distanceFromStar = distanceFromStar;
     }
     
-    @Override
     
 
     

@@ -9,19 +9,36 @@ package concrete;
  *
  * @author chris
  */
- public interface CelestialBody {
+ public class CelestialBody {
+     private String name;
+     private double luminosity;
+     private double bodyDiameterKM;
 
-    public abstract double getBodyDiameterKM();
+    public String getName() {
+        return name;
+    }
 
-    public abstract void setBodyDiameterKM(double bodyDiameterKM);
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    public abstract String getName();
+    public double getLuminosity() {
+        return luminosity;
+    }
 
-    public abstract void setName(String name);
-    
-    public abstract void setLuminosity(double luminosity);
-    
-    public abstract void getLuminosity();
+    public void setLuminosity(double luminosity) {
+        this.luminosity = luminosity;
+    }
+
+    public double getBodyDiameterKM() {
+        return bodyDiameterKM;
+    }
+
+    public void setBodyDiameterKM(double bodyDiameterKM) {
+        this.bodyDiameterKM = bodyDiameterKM;
+    }
+
+
     
     
     

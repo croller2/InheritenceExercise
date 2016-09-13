@@ -10,10 +10,11 @@ package myinterface;
  *
  * @author chris
  */
-public class PlanetaryBody implements CelestialBody {
+public abstract class PlanetaryBody implements CelestialBody {
     //super class properties
     private double bodyDiameterKM;
     private String name;
+    private double luminosity;
     
     private int yearLength;
     private int numOfMoons;
@@ -61,6 +62,16 @@ public class PlanetaryBody implements CelestialBody {
     @Override
     public void setName(String name) {
        this.name = name;
+    }
+
+    @Override
+    public double getLuminosity() {
+        return luminosity;
+    }
+
+    @Override
+    public void setLuminosity(double luminosity) {
+       this.luminosity = luminosity; 
     }
     
     

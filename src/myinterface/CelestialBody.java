@@ -12,7 +12,7 @@ import concrete.*;
  * @author chris
  */
 public interface CelestialBody {
-
+    
 
     public abstract double getBodyDiameterKM();
     
@@ -24,6 +24,9 @@ public interface CelestialBody {
 
     public abstract void setName(String name);
     
+    public abstract double getLuminosity();
+    
+    public abstract void setLuminosity(double luminosity);
     
     
 }
