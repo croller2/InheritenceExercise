@@ -14,6 +14,9 @@ public class Planet extends PlanetaryBody{
     private boolean hasWater;
     private boolean livable;
     
+    private String name;
+    private double bodyDiameterKM;
+    
     
 
     public String getPlanetClass() {
@@ -53,6 +56,26 @@ public class Planet extends PlanetaryBody{
         }else{
             System.out.println("Doesn't Support Life, Keep Looking");
         }
+    }
+
+    @Override
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public void setBodyDiameterKM(double bodyDiameterKM) {
+        this.bodyDiameterKM = bodyDiameterKM;
+    }
+
+    @Override
+    public double getBodyDiameterKM() {
+        return bodyDiameterKM;
     }
     
     

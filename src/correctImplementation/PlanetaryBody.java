@@ -11,11 +11,11 @@ package correctImplementation;
  *
  * @author chris
  */
-public abstract class PlanetaryBody extends CelestialBody {
+public abstract class PlanetaryBody implements CelestialBody {
     private int yearLength;
     private int numOfMoons;
     private boolean hasRings;
-
+    
     public int getYearLength() {
         return yearLength;
     }
@@ -39,6 +39,18 @@ public abstract class PlanetaryBody extends CelestialBody {
     public void setHasRings(boolean hasRings) {
         this.hasRings = hasRings;
     }
+
+    @Override
+    public abstract void setName(String name);
+
+    @Override
+    public abstract String getName();
+
+    @Override
+    public abstract void setBodyDiameterKM(double bodyDiameterKM);
+
+    @Override
+    public abstract double getBodyDiameterKM();
     
     
 }
