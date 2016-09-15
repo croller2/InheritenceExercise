@@ -9,24 +9,24 @@ package magicalConcrete;
  *
  * @author chris
  */
-public class humanoid extends middleEarthBeing {
+public class humanoid extends MiddleEarthBeing {
     private int numOfEyes;
     
     private boolean abilityToSpeak;
 
-    public int getNumOfEyes() {
+    public final int getNumOfEyes() {
         return numOfEyes;
     }
 
-    public void setNumOfEyes(int numOfEyes) {
+    public final void setNumOfEyes(int numOfEyes) {
         this.numOfEyes = numOfEyes;
     }
 
-    public boolean isAbilityToSpeak() {
+    public final boolean isAbilityToSpeak() {
         return abilityToSpeak;
     }
 
-    public void setAbilityToSpeak(boolean abilityToSpeak) {
+    public final void setAbilityToSpeak(boolean abilityToSpeak) {
         this.abilityToSpeak = abilityToSpeak;
     }  
 }

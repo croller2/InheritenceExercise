@@ -9,7 +9,7 @@ package magicalInteface;
  *
  * @author chris
  */
-public abstract class humanoid implements middleEarthBeing{
+public abstract class humanoid implements MiddleEarthBeing{
     private int numOfEyes;
     
     private boolean abilityToSpeak;

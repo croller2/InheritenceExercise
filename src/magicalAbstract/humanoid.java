@@ -10,7 +10,7 @@ package magicalAbstract;
  *
  * @author chris
  */
-public abstract class humanoid extends middleEarthBeing{
+public abstract class humanoid extends MiddleEarthBeing{
     private int numOfEyes;
     
     private boolean abilityToSpeak;

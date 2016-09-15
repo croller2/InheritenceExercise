@@ -16,27 +16,27 @@ public abstract class PlanetaryBody implements CelestialBody {
     private int numOfMoons;
     private boolean hasRings;
     
-    public int getYearLength() {
+    public final int getYearLength() {
         return yearLength;
     }
 
-    public void setYearLength(int yearLength) {
+    public final void setYearLength(int yearLength) {
         this.yearLength = yearLength;
     }
 
-    public int getNumOfMoons() {
+    public final int getNumOfMoons() {
         return numOfMoons;
     }
 
-    public void setNumOfMoons(int numOfMoons) {
+    public final void setNumOfMoons(int numOfMoons) {
         this.numOfMoons = numOfMoons;
     }
 
-    public boolean isHasRings() {
+    public final boolean isHasRings() {
         return hasRings;
     }
 
-    public void setHasRings(boolean hasRings) {
+    public final void setHasRings(boolean hasRings) {
         this.hasRings = hasRings;
     }
 

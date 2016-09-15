@@ -11,10 +11,10 @@ package magicalAbstract;
  */
 public class hobbit extends humanoid {
 
-    private String[] mealsInDay = {"breakfast" , "secondBreakfast" , "thirdBreakfast" , "brunch" , "lunch" , "dinner" , "supper" , "bedTimeSnack"};
+    private final String[] mealsInDay = {"breakfast" , "secondBreakfast" , "thirdBreakfast" , "brunch" , "lunch" , "dinner" , "supper" , "bedTimeSnack"};
 
     
-    public String getLastMeal(double milTime){
+    public final String getLastMeal(double milTime){
         if(milTime > 0 && milTime < 700){
             return mealsInDay[0];
         }else if (milTime >= 700 && milTime < 800){

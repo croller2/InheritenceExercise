@@ -5,13 +5,13 @@ package correctImplementation;
 public interface CelestialBody {
 
 
-    public double getBodyDiameterKM();
+    public abstract double getBodyDiameterKM();
 
-    public void setBodyDiameterKM(double bodyDiameterKM);
+    public abstract void setBodyDiameterKM(double bodyDiameterKM);
 
-    public String getName();
+    public abstract String getName();
 
-    public void setName(String name);
+    public abstract void setName(String name);
     
     
     
