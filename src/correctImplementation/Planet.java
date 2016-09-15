@@ -5,10 +5,6 @@
  */
 package correctImplementation;
 
-/**
- *
- * @author chris
- */
 public class Planet extends PlanetaryBody{
     private String planetClass;
     private boolean hasWater;
