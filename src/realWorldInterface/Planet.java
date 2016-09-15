@@ -15,6 +15,11 @@ public class Planet extends PlanetaryBody{
     private boolean hasWater;
     private boolean livable;
     
+    //super class properties
+    private double bodyDiameterKM;
+    private String name;
+    private double luminosity;
+    
     public String getPlanetClass() {
         return planetClass;
     }
@@ -88,6 +93,35 @@ public class Planet extends PlanetaryBody{
         return super.getYearLength(); //To change body of generated methods, choose Tools | Templates.
     }
     
+    @Override
+    public double getBodyDiameterKM() {
+        return bodyDiameterKM;
+    }
+
+    @Override
+    public void setBodyDiameterKM(double bodyDiameterKM) {
+        this.bodyDiameterKM = bodyDiameterKM;
+    }
+
+    @Override
+    public String getName() {
+       return name;
+    }
+
+    @Override
+    public void setName(String name) {
+       this.name = name;
+    }
+
+    @Override
+    public double getLuminosity() {
+        return luminosity;
+    }
+
+    @Override
+    public void setLuminosity(double luminosity) {
+       this.luminosity = luminosity; 
+    }
     
     
 }

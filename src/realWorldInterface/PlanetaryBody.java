@@ -43,36 +43,6 @@ public abstract class PlanetaryBody implements CelestialBody {
     public void setHasRings(boolean hasRings) {
         this.hasRings = hasRings;
     }
-
-    @Override
-    public double getBodyDiameterKM() {
-        return bodyDiameterKM;
-    }
-
-    @Override
-    public void setBodyDiameterKM(double bodyDiameterKM) {
-        this.bodyDiameterKM = bodyDiameterKM;
-    }
-
-    @Override
-    public String getName() {
-       return name;
-    }
-
-    @Override
-    public void setName(String name) {
-       this.name = name;
-    }
-
-    @Override
-    public double getLuminosity() {
-        return luminosity;
-    }
-
-    @Override
-    public void setLuminosity(double luminosity) {
-       this.luminosity = luminosity; 
-    }
     
     
 }
