@@ -20,17 +20,9 @@ public class Startup {
         earth.setBodyDiameterKM(12700);
         earth.setPlanetClass("M");
         earth.setYearLength(365);
-        earth.setHasRings(false);
-        earth.setNumOfMoons(1);
+
         earth.setName("Earth");
-        System.out.println(earth.getName() + " has: " + earth.getNumOfMoons() + " moon(s)"
-        );
-        if(earth.isHasRings()){
-            System.out.println("It has rings");
-        }else{
-            System.out.println("It does not have rings");
-        }
-        
+ 
         earth.colonizePlanet();
     }
     
