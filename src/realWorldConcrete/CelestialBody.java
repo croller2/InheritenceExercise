@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package concrete;
+package realWorldConcrete;
 
 /**
  *
@@ -14,27 +14,27 @@ package concrete;
      private double luminosity;
      private double bodyDiameterKM;
 
-    public String getName() {
+    public final String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    public final void setName(String name) {
         this.name = name;
     }
 
-    public double getLuminosity() {
+    public final double getLuminosity() {
         return luminosity;
     }
 
-    public void setLuminosity(double luminosity) {
+    public final void setLuminosity(double luminosity) {
         this.luminosity = luminosity;
     }
 
-    public double getBodyDiameterKM() {
+    public final double getBodyDiameterKM() {
         return bodyDiameterKM;
     }
 
-    public void setBodyDiameterKM(double bodyDiameterKM) {
+    public final void setBodyDiameterKM(double bodyDiameterKM) {
         this.bodyDiameterKM = bodyDiameterKM;
     }
 

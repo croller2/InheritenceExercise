@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package concrete;
+package realWorldAbstract;
 
 /**
  *
@@ -30,6 +30,9 @@ public class Startup {
         }else{
             System.out.println("It does not have rings");
         }
+        
+        earth.setDistanceFromSun(1490000000);
+        System.out.println("Light time to planet from it's sar: " + earth.calculateLightTimeToBody()); 
         
         earth.colonizePlanet();
     }

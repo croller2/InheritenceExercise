@@ -1,24 +1,24 @@
 
-package concrete;
+package realWorldConcrete;
 
 public class PlanetaryBody extends CelestialBody {
     private int yearLength;
     private double distanceFromStar;
 
  
-    public int getYearLength() {
+    public final int getYearLength() {
         return yearLength;
     }
 
-    public void setYearLength(int yearLength) {
+    public final void setYearLength(int yearLength) {
         this.yearLength = yearLength;
     }
 
-    public double getDistanceFromStar() {
+    public final double getDistanceFromStar() {
         return distanceFromStar;
     }
 
-    public void setDistanceFromStar(double distanceFromStar) {
+    public final void setDistanceFromStar(double distanceFromStar) {
         this.distanceFromStar = distanceFromStar;
     }
     
