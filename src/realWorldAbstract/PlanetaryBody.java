@@ -35,9 +35,7 @@ public abstract class PlanetaryBody extends CelestialBody {
         return speedOfLight;
     }
     
-    
-    //added in the override to show abstract method
-    @Override
+   
     public double calculateLightTimeToBody() {
         return distanceFromSun * speedOfLight;
     }

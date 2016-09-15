@@ -14,8 +14,6 @@ public abstract class CelestialBody {
     private double bodyDiameterKM;
     private String name;
     private double luminosity;
-
-    public abstract double calculateLightTimeToBody();
     
     public double getBodyDiameterKM() {
         return bodyDiameterKM;
